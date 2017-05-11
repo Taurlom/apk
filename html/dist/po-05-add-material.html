@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>БДД-2</title>
+<meta name="description" content="">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+   <!--[if lte IE 8]>
+<style>
+   .browserupgrade {text-align: center;border: 2px solid #b4b472;font-size: 20px;padding: 20px;position: fixed;background: #333;color: #c1bea2;width: 400px;left: 50%;margin-left: -200px;z-index: 999999;}
+   .browserupgrade a {color: #fff;}
+   .browserupgrade a:hover {color: #e0c1ff;text-decoration: none;}
+</style>
+<p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста<br/> <a
+        href="http://browsehappy.com/">обновите ваш браузер или установите альтернативный</a><br/> для корректного
+   отображения содержимого сайта.</p>
+<![endif]-->
+
+   <div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header-table">
+                <div class="header-col">
+                    <a href="/" class="header__logo">
+                        <img src="/img/logo.png" alt="На главную">
+                    </a>
+                </div>
+                <nav class="header-col">
+                    <ul class="header-nav">
+                        <li class="hn-about">
+                            <a href="#">
+                                <svg class="svg-h-traffic-light-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-traffic-light"></use>
+                                </svg>
+                                О проекте
+                            </a>
+                        </li>
+                        <li class="hn-cat">
+                            <a href="#">
+                                <svg class="svg-h-folder-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-folder"></use>
+                                </svg>
+                                каталог
+                            </a>
+                        </li>
+                        <li class="hn-news">
+                            <a href="#">
+                                <svg class="svg-h-flag-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-flag"></use>
+                                </svg>
+                                новости
+                            </a>
+                        </li>
+                        <li class="hn-docs">
+                            <a href="#">
+                                <svg class="svg-h-tablet-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-tablet"></use>
+                                </svg>
+                                нормативные документы
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-col ta-r">
+                    <a href="#" class="special-view-link">
+                        <svg class="svg-h-glasses-dims">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-glasses"></use>
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+                    <a href="#" class="header__user-link">
+                        <div class="header__user-icon">
+                            <svg class="svg-user-icon-dims">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#user-icon"></use>
+                            </svg>
+                        </div>
+                        Константинопольский Александр Ферапонтович
+                    </a>
+                    <div class="header__buttons">
+                        <a href="#" class="button button_color_common">ВЫХОД</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <section class="search-panel">
+    <div class="container">
+        <h2>Федеральный каталог
+            <span>Интерактивных образовательных программ</span>
+        </h2>
+        <div class="search-panel__col-right">
+            <form class="search-form" action="">
+                <div class="search-hamburger _search-hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <input class="search-panel__input" type="search" placeholder="Введите поисковое слово (фразу)">
+                <button type="submit"></button>
+                <div class="advanced-search" style="display: none;">
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-1" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-1">Дошкольникам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-2" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-2">Школьникам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-3" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-3">Педагогам/Воспитателям</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-4" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-4">По темам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-5" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-5">По авторам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-6" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-6">По возрасту</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-7" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-7">Фотогалерея/Картинки</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-8" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-8">Видео</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+   <div class="breadcrumbs__wrapper">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li>Образовательные курсы</li>
+        </ul>
+    </div>
+</div>
+
+   <main>
+
+      <div class="container row">
+
+         <aside class="left-panel left-panel_privat-office">
+
+            <div class="po-user-box">
+    <div class="po-user-box__img" style="background-image: url('/img/temp/po-face-2.jpg');"></div>
+    <div class="po-user-box__username">Иванова Алла Борисовна</div>
+    <div class="po-user-box__usertype po-user-box__usertype_expert">Эксперт</div>
+
+    <div class="po-user-box__service-links">
+        <a href="#">Сменить пароль</a>
+        <a href="#">Изменить персональные данные</a>
+    </div>
+</div>
+
+         </aside>
+
+         <div class="panel-content panel-content_privat-office">
+
+            <h2 class="content-title content-title_no-margin">Добавление обучающего материала</h2>
+
+            <div class="alert mt20">
+               <span>Внимание! После нажатия кнопки <b>Сохранить</b> материал будет направлен на модерацию.</span>
+            </div>
+
+            <form action="#" class="panel-content__form">
+
+               <div class="panel-content__row">
+
+                  <span class="panel-content__label">Тип публикации:</span>
+                  <div class="panel-content__input panel-content__input_w80">
+                     <span class="form-material-type">Аудио</span>
+                  </div>
+
+               </div>
+
+               <div class="panel-content__row">
+
+                  <span class="panel-content__label">Название материала</span>
+                  <div class="panel-content__input panel-content__input_w80">
+                     <input type="text" class="panel-content__input-text">
+                  </div>
+
+               </div>
+
+               <div class="panel-content__row">
+
+                  <span class="panel-content__label">Автор</span>
+                  <div class="panel-content__input panel-content__input_w80">
+                     <input type="text" class="panel-content__input-text">
+                  </div>
+
+               </div>
+
+               <div class="panel-content__row">
+
+                  <span class="panel-content__label">Пояснительный текст (комментарий)</span>
+                  <div class="panel-content__input panel-content__input_w80">
+                     <textarea class="panel-content__input-textarea"></textarea>
+                  </div>
+
+               </div>
+
+               <div class="panel-content__row">
+
+                  <span class="panel-content__label">Аудитория</span>
+                  <div class="panel-content__input panel-content__input_w80">
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="po-chk1" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="po-chk1">Все</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="po-chk2" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="po-chk2">Дети</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="po-chk3" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="po-chk3">Родители</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="po-chk4" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="po-chk4">Педадгоги и воспитатели</label>
+                     </div>
+                  </div>
+
+               </div>
+
+
+               <section class="docs">
+                  <div class="docs__header-text">Тема</div>
+                  <div class="container _parent">
+                     <div class="docs__bar">
+                        <div class="docs_label-text">
+                           Выберите подходящие темы:
+                        </div>
+                        <div class="double-arr-button _drop-btn">
+                           <svg class="svg-double-arr-up-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#double-arr-up"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="docs__sub-list _drop-box">
+                        <ul class="docs__checkbox-list">
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk1" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk1">Общие положения</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk2" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk2">Общие обязанности водителей</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk3" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk3">Применение специальных сигналов</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk4" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk4">Обязанности пешеходов</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk5" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk5">Обязанности пассажиров</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="docs__fake-checkbox">Сигналы светофора и регулировщика</div>
+                              <ul>
+                                 <li>
+                                    <div class="checkbox-item">
+                                       <input class="checkbox-item__checkbox" id="themes-list-l2-chk1" type="checkbox"/>
+                                       <label class="checkbox-item__checkbox-label" for="themes-list-l2-chk1">Обязанности пассажиров</label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox-item">
+                                       <input class="checkbox-item__checkbox" id="themes-list-l2-chk2" type="checkbox"/>
+                                       <label class="checkbox-item__checkbox-label" for="themes-list-l2-chk2">Применение аварийной световой сигнализации и знака аварийной остановки</label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox-item">
+                                       <input class="checkbox-item__checkbox" id="themes-list-l2-chk3" type="checkbox"/>
+                                       <label class="checkbox-item__checkbox-label" for="themes-list-l2-chk3">Начало движения. Маневрирование</label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox-item">
+                                       <input class="checkbox-item__checkbox" id="themes-list-l2-chk4" type="checkbox"/>
+                                       <label class="checkbox-item__checkbox-label" for="themes-list-l2-chk4">Расположение транспортных средств на проезжей части</label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="checkbox-item">
+                                       <input class="checkbox-item__checkbox" id="themes-list-l2-chk5" type="checkbox"/>
+                                       <label class="checkbox-item__checkbox-label" for="themes-list-l2-chk5">Скорость движения</label>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk7" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk7">Применение аварийной световой сигнализации и знака аварийной остановки</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk8" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk8">Начало движения. Маневрирование</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk9" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk9">Расположение транспортных средств на проезжей части</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk7" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk7">Применение аварийной световой сигнализации и знака аварийной остановки</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk8" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk8">Начало движения. Маневрирование</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk9" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk9">Расположение транспортных средств на проезжей части</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk7" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk7">Применение аварийной световой сигнализации и знака аварийной остановки</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk8" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk8">Начало движения. Маневрирование</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk9" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk9">Расположение транспортных средств на проезжей части</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk9" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk9">Расположение транспортных средств на проезжей части</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk9" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk9">Расположение транспортных средств на проезжей части</label>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="checkbox-item">
+                                 <input class="checkbox-item__checkbox" id="themes-list-chk9" type="checkbox"/>
+                                 <label class="checkbox-item__checkbox-label" for="themes-list-chk9">Расположение транспортных средств на проезжей части</label>
+                              </div>
+                           </li>
+                        </ul>
+                        <div class="docs__checkbox-list-all-btn">выбрать все</div>
+                     </div>
+                     <ul class="docs__themes-chosen">
+                        <li>
+                           <span class="docs__themes-chosen-name">Светофор</span>
+                           <span class="docs__themes-chosen-close"></span>
+                        </li>
+                        <li>
+                           <span class="docs__themes-chosen-name">Пешеходный переход</span>
+                           <span class="docs__themes-chosen-close"></span>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+
+
+               <div class="panel-content__row">
+                  <span class="panel-content__label">Загрузить обложку</span>
+                  <div class="file-upload file-upload_w80">
+                     <input type="file">
+                     <div class="file-upload__item upload-fake-butt">
+                        <span>Выберите файл</span>
+                     </div>
+                     <span class="file-upload__notice upload-value">Разрешенные форматы файлов для прикрепления: <span class="file-upload__file-types">jpg, png, gif</span></span>
+                  </div>
+               </div>
+
+               <div class="po-form-notice">Прикрепите файл обучающего материала</div>
+
+               <div class="panel-content__row">
+                  <div class="file-upload file-upload_w80">
+                     <input type="file">
+                     <div class="file-upload__item upload-fake-butt">
+                        <span>Выберите файл</span>
+                     </div>
+                     <span class="file-upload__notice upload-value">Разрешенные форматы файлов для прикрепления: <span class="file-upload__file-types">zip</span></span>
+                  </div>
+               </div>
+
+               <div class="panel-content__row tac">
+                  <button type="submit" class="button_width_180px button_color_common-dark button_font-size_big-text button">Сохранить</button>
+               </div>
+               <div class="panel-content__row tac">
+                  <button class="button_width_180px button_color_gray button_font-size_big-text button">Закрыть</button>
+               </div>
+            </form>
+
+         </div>
+      </div>
+
+   </main>
+
+   </div>
+
+<footer>
+   <div class="container container_footer">
+      <div class="footer-table">
+         <div class="footer-col">
+            <ul class="footer__partners">
+               <li class="minobr"><a href="http://xn--80abucjiibhv9a.xn--p1ai/"><img src="/img/logo-minobr.png" alt="Минобр"></a></li>
+               <li class="bdd"><a href="#"><img src="/img/logo-bdd.png" alt=""></a></li>
+               <li class="rosobr"><a href="http://www.edu.ru/"><img src="/img/logo-rosobr.png" alt="Российское Образование"></a></li>
+               <li class="informika"><a href="http://informika.ru/"><img src="/img/logo-informika.png" alt="Информика"></a></li>
+            </ul>
+         </div>
+         <div class="footer-col col2">
+            <div class="footer__logo">
+               <img src="/img/logo-footer.png" alt="">
+            </div>
+            <div class="footer__copyright">
+               © Министерство образования и науки Российской Федерации, 2016
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class="mask"></div>
+<div class="scrollup">
+   <svg class="svg-up-arr-dims">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#up-arr"></use>
+   </svg>
+</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
+<script src="/assets/js/bundle.js"></script>
+
+</body>
+</html>
+

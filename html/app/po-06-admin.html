@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+</head>
+
+<body>
+   @@include('../includes/common/browserhappy.html', {})
+   @@include('../includes/blocks/po-header.html', {})
+   @@include('../includes/blocks/search-panel.html', {})
+   @@include('../includes/blocks/breadcrumbs.html', {})
+
+   <main>
+
+      <div class="container row">
+
+         <aside class="left-panel left-panel_privat-office">
+
+            @@include('../includes/blocks/po__left-panel.html',
+            {
+               "img": "po-face-3.jpg",
+               "name": "Тимофеев Борис Егорович",
+               "type": "admin",
+               "type-text": "Администратор"
+            })
+
+         </aside>
+
+         <div class="panel-content panel-content_privat-office">
+
+            <h2 class="content-title content-title_first mb10">Содержание</h2>
+            <div class="block-shadow">
+               <div class="po__admin-tools d-t">
+                  <div class="po__admin-tools-row d-tr">
+                     <div class="po__admin-tools-cell d-tc">
+                        <div class="po__admin-tools-label">Верхнее меню</div>
+                     </div>
+                     <div class="po__admin-tools-cell d-tc ta-r">
+                        <div class="button button_size_common button_color_gray button_font-size_big-text">добавить новый</div>
+                        <div class="button button_size_common  button_color_common-dark button_font-size_big-text">список</div>
+                     </div>
+                  </div>
+                  <div class="po__admin-tools-row d-tr">
+                     <div class="po__admin-tools-cell d-tc">
+                        <div class="po__admin-tools-label">Новости</div>
+                     </div>
+                     <div class="po__admin-tools-cell d-tc ta-r">
+                        <div class="button button_size_common button_color_gray button_font-size_big-text">добавить новый</div>
+                        <div class="button button_size_common  button_color_common-dark button_font-size_big-text">список</div>
+                     </div>
+                  </div>
+                  <div class="po__admin-tools-row d-tr">
+                     <div class="po__admin-tools-cell d-tc">
+                        <div class="po__admin-tools-label">Обучающий материал</div>
+                     </div>
+                     <div class="po__admin-tools-cell d-tc ta-r">
+                        <div class="button button_size_common button_color_gray button_font-size_big-text">добавить новый</div>
+                        <div class="button button_size_common  button_color_common-dark button_font-size_big-text">список</div>
+                     </div>
+                  </div>
+                  <div class="po__admin-tools-row d-tr">
+                     <div class="po__admin-tools-cell d-tc">
+                        <div class="po__admin-tools-label">Нормативная документация</div>
+                     </div>
+                     <div class="po__admin-tools-cell d-tc ta-r">
+                        <div class="button button_size_common button_color_gray button_font-size_big-text">добавить новый</div>
+                        <div class="button button_size_common  button_color_common-dark button_font-size_big-text">список</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h2 class="content-title mb10">Управление</h2>
+            <div class="block-shadow">
+               <div class="po__admin-tools d-t">
+                  <div class="po__admin-tools-row d-tr">
+                     <div class="po__admin-tools-cell d-tc">
+                        <div class="po__admin-tools-label">Пользователи</div>
+                     </div>
+                     <div class="po__admin-tools-cell d-tc ta-r">
+                        <div class="button button_size_common button_color_gray button_font-size_big-text">добавить новый</div>
+                        <div class="button button_size_common  button_color_common-dark button_font-size_big-text">список</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h2 class="content-title mb10">Справочники</h2>
+            <div class="block-shadow">
+               <div class="po__admin-tools d-t">
+                  <div class="po__admin-tools-row d-tr">
+                     <div class="po__admin-tools-cell d-tc">
+                        <div class="po__admin-tools-label">Категории</div>
+                     </div>
+                     <div class="po__admin-tools-cell d-tc ta-r">
+                        <div class="button button_size_common button_color_gray button_font-size_big-text">добавить новый</div>
+                        <div class="button button_size_common  button_color_common-dark button_font-size_big-text">список</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </main>
+
+   @@include('../includes/blocks/footer.html', {})
+   @@include('../includes/common/scripts.html', {})
+
+</body>
+</html>
+

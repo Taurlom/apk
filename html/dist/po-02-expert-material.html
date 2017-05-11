@@ -1,0 +1,467 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>БДД-2</title>
+<meta name="description" content="">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+   <!--[if lte IE 8]>
+<style>
+   .browserupgrade {text-align: center;border: 2px solid #b4b472;font-size: 20px;padding: 20px;position: fixed;background: #333;color: #c1bea2;width: 400px;left: 50%;margin-left: -200px;z-index: 999999;}
+   .browserupgrade a {color: #fff;}
+   .browserupgrade a:hover {color: #e0c1ff;text-decoration: none;}
+</style>
+<p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста<br/> <a
+        href="http://browsehappy.com/">обновите ваш браузер или установите альтернативный</a><br/> для корректного
+   отображения содержимого сайта.</p>
+<![endif]-->
+
+   <div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header-table">
+                <div class="header-col">
+                    <a href="/" class="header__logo">
+                        <img src="/img/logo.png" alt="На главную">
+                    </a>
+                </div>
+                <nav class="header-col">
+                    <ul class="header-nav">
+                        <li class="hn-about">
+                            <a href="#">
+                                <svg class="svg-h-traffic-light-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-traffic-light"></use>
+                                </svg>
+                                О проекте
+                            </a>
+                        </li>
+                        <li class="hn-cat">
+                            <a href="#">
+                                <svg class="svg-h-folder-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-folder"></use>
+                                </svg>
+                                каталог
+                            </a>
+                        </li>
+                        <li class="hn-news">
+                            <a href="#">
+                                <svg class="svg-h-flag-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-flag"></use>
+                                </svg>
+                                новости
+                            </a>
+                        </li>
+                        <li class="hn-docs">
+                            <a href="#">
+                                <svg class="svg-h-tablet-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-tablet"></use>
+                                </svg>
+                                нормативные документы
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-col ta-r">
+                    <a href="#" class="special-view-link">
+                        <svg class="svg-h-glasses-dims">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-glasses"></use>
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+                    <a href="#" class="header__user-link">
+                        <div class="header__user-icon">
+                            <svg class="svg-user-icon-dims">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#user-icon"></use>
+                            </svg>
+                        </div>
+                        Константинопольский Александр Ферапонтович
+                    </a>
+                    <div class="header__buttons">
+                        <a href="#" class="button button_color_common">ВЫХОД</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <section class="search-panel">
+    <div class="container">
+        <h2>Федеральный каталог
+            <span>Интерактивных образовательных программ</span>
+        </h2>
+        <div class="search-panel__col-right">
+            <form class="search-form" action="">
+                <div class="search-hamburger _search-hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <input class="search-panel__input" type="search" placeholder="Введите поисковое слово (фразу)">
+                <button type="submit"></button>
+                <div class="advanced-search" style="display: none;">
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-1" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-1">Дошкольникам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-2" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-2">Школьникам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-3" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-3">Педагогам/Воспитателям</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-4" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-4">По темам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-5" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-5">По авторам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-6" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-6">По возрасту</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-7" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-7">Фотогалерея/Картинки</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-8" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-8">Видео</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+   <div class="breadcrumbs__wrapper">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li>Образовательные курсы</li>
+        </ul>
+    </div>
+</div>
+
+   <main>
+
+      <div class="container row">
+
+         <aside class="left-panel left-panel_privat-office">
+
+            <div class="po-user-box">
+    <div class="po-user-box__img" style="background-image: url('/img/temp/po-face-2.jpg');"></div>
+    <div class="po-user-box__username">Иванова Алла Борисовна</div>
+    <div class="po-user-box__usertype po-user-box__usertype_expert">Эксперт</div>
+
+    <div class="po-user-box__service-links">
+        <a href="#">Сменить пароль</a>
+        <a href="#">Изменить персональные данные</a>
+    </div>
+</div>
+
+         </aside>
+
+         <div class="panel-content panel-content_privat-office">
+
+            <div class="alert">
+               <span>Внимание! Данный материал находится на модерации и не доступен всем пользователям.</span>
+            </div>
+
+            <div class="block-shadow">
+               <div class="left-panel">
+                  <div class="teacher-info">
+    <div class="teacher-info__img" style="background-image: url('/img/temp/teacher-info.jpg')"></div>
+    <div class="teacher-info__name">
+        Иванова Светлана Сергеевна
+    </div>
+    <div class="teacher-info__status">
+        Учитель
+    </div>
+    <div class="teacher-info__school">
+        Школа № 17, <span>г. Самара</span>
+    </div>
+</div>
+               </div>
+
+               <div class="right-panel">
+                  <div class="title-block">
+    <h2 class="content-title">Применение аварийной сигнализации и знака аварийной остановки</h2>
+    <div class="title-block__date">Опубликовано: 24 января 2014г.</div>
+    <ul class="tags">
+        <li><a href="#">Светофор</a></li>
+        <li><a href="#">Пешеходный переход</a></li>
+        <li><a href="#">Ремень безопасности</a></li>
+    </ul>
+</div>
+               </div>
+
+               <div class="text-block">
+                  <p>
+                     "Главная дорога" - дорога, обозначенная знаками 2.1, 2.3.1 - 2.3.7 или 5.1, по отношению к пересекаемой (примыкающей), или дорога с твердым покрытием (асфальто- и цементобетон, каменные материалы и тому подобное) по отношению к грунтовой, либо любая дорога по отношению к выездам с прилегающих территорий. Наличие на второстепенной дороге непосредственно перед перекрестком участка с покрытием не делает ее равной по значению с пересекаемой.
+                  </p>
+                  <p>
+                     "Главная дорога" - дорога, обозначенная знаками 2.1, 2.3.1 - 2.3.7 или 5.1, по отношению к пересекаемой (примыкающей), или дорога с твердым покрытием (асфальто- и цементобетон, каменные материалы и тому подобное) по отношению к грунтовой, либо любая дорога по отношению к выездам с прилегающих территорий. Наличие на второстепенной дороге непосредственно перед перекрестком участка с покрытием не делает ее равной по значению с пересекаемой.
+                  </p>
+               </div>
+
+               <div class="themes">
+
+                  <a href="#" class="themes__block">
+                     <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-01.jpg')"></div>
+                     <div class="themes__text-row">
+                        <span>Автор</span>
+                        Иванов С.С.
+                     </div>
+                     <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                        <span>Тема</span>
+                        Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                     </div>
+                     <div class="themes__bar">
+                        <div class="themes__type themes__type_camera">
+                           <span>12</span>
+                           <svg class="svg-themes-type_camera-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_camera"></use>
+                           </svg>
+                        </div>
+                        <div class="stars">
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                        </div>
+
+                     </div>
+                  </a>
+
+                  <a href="#" class="themes__block">
+                     <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-02.jpg')"></div>
+                     <div class="themes__text-row">
+                        <span>Автор</span>
+                        Васильева Г. О
+                     </div>
+                     <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                        <span>Тема</span>
+                        Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                     </div>
+                     <div class="themes__bar">
+                        <div class="themes__type themes__type_pic">
+                           <span>12</span>
+                           <svg class="svg-themes-type_pic-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_pic"></use>
+                           </svg>
+                        </div>
+                        <div class="stars">
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                        </div>
+
+                     </div>
+                  </a>
+
+                  <a href="#" class="themes__block">
+                     <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-03.jpg')"></div>
+                     <div class="themes__text-row">
+                        <span>Автор</span>
+                        Васильева Г. О
+                     </div>
+                     <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                        <span>Тема</span>
+                        Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                     </div>
+                     <div class="themes__bar">
+                        <div class="themes__type themes__type_foto">
+                           <span>12</span>
+                           <svg class="svg-themes-type_foto-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_foto"></use>
+                           </svg>
+                        </div>
+                        <div class="stars">
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                        </div>
+
+                     </div>
+                  </a>
+
+                  <a href="#" class="themes__block">
+                     <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-04.jpg')"></div>
+                     <div class="themes__text-row">
+                        <span>Автор</span>
+                        Васильева Г. О
+                     </div>
+                     <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                        <span>Тема</span>
+                        Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                     </div>
+                     <div class="themes__bar">
+                        <div class="themes__type themes__type_comment">
+                           <span>23</span>
+                           <svg class="svg-themes-type_comment-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_comment"></use>
+                           </svg>
+                        </div>
+                        <div class="stars">
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                        </div>
+
+                     </div>
+                  </a>
+
+                  <a href="#" class="themes__block">
+                     <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-04.jpg')"></div>
+                     <div class="themes__text-row">
+                        <span>Автор</span>
+                        Васильева Г. О
+                     </div>
+                     <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                        <span>Тема</span>
+                        Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                     </div>
+                     <div class="themes__bar">
+                        <div class="themes__type themes__type_comment">
+                           <span>23</span>
+                           <svg class="svg-themes-type_comment-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_comment"></use>
+                           </svg>
+                        </div>
+                        <div class="stars">
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims star_active">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                           <svg class="svg-star-dims">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                           </svg>
+                        </div>
+
+                     </div>
+                  </a>
+
+               </div>
+            </div>
+
+            <div class="download-row">
+               <a href="#" class="button button_size_middle button_color_common-dark">скачать</a>
+            </div>
+
+         </div>
+      </div>
+
+   </main>
+
+   </div>
+
+<footer>
+   <div class="container container_footer">
+      <div class="footer-table">
+         <div class="footer-col">
+            <ul class="footer__partners">
+               <li class="minobr"><a href="http://xn--80abucjiibhv9a.xn--p1ai/"><img src="/img/logo-minobr.png" alt="Минобр"></a></li>
+               <li class="bdd"><a href="#"><img src="/img/logo-bdd.png" alt=""></a></li>
+               <li class="rosobr"><a href="http://www.edu.ru/"><img src="/img/logo-rosobr.png" alt="Российское Образование"></a></li>
+               <li class="informika"><a href="http://informika.ru/"><img src="/img/logo-informika.png" alt="Информика"></a></li>
+            </ul>
+         </div>
+         <div class="footer-col col2">
+            <div class="footer__logo">
+               <img src="/img/logo-footer.png" alt="">
+            </div>
+            <div class="footer__copyright">
+               © Министерство образования и науки Российской Федерации, 2016
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class="mask"></div>
+<div class="scrollup">
+   <svg class="svg-up-arr-dims">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#up-arr"></use>
+   </svg>
+</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
+<script src="/assets/js/bundle.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,165 @@
+.wrapper {
+  min-height: 100%;
+  min-width: 1200px;
+}
+
+footer {
+  margin: -120px 0 0;
+  height: 90px;
+}
+
+main {
+  padding: 0 0 170px;
+}
+
+.container {
+  min-width: 1200px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  font-size: 0;
+}
+
+.col-2{
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  &:first-of-type{
+    margin-right: 1.8%;
+  }
+  &:last-child{
+    margin-left: 1.8%;
+  }
+}
+
+.panel-content {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 320px);
+  font-size: 16px;
+  &_privat-office {
+    width: calc(100% - 215px);
+  }
+}
+
+.panel-content__form{
+  margin-top: 40px;
+}
+
+.panel-content__row{
+  margin-bottom: 20px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  &:after{
+    @include clear();
+  }
+}
+
+.panel-content__row-cell{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2.9%;
+  &:last-of-type{
+    margin-right: 0;
+  }
+  &:after{
+    @include clear();
+  }
+}
+
+.panel-content__row-cell_w20{
+  width: 20%;
+}
+
+.panel-content__row-cell_w25{
+  width: 25%;
+}
+
+.panel-content__label{
+  display: inline-block;
+  width: 20%;
+  font-size: 17px;
+  color: #12275a;
+  padding-right: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.panel-content__input{
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  float: right;
+  .checkbox-item label {
+    height: 36px;
+    line-height: 36px;
+    margin: 0 20px 0 0;
+    &:before {
+      top: 8px !important;
+    }
+    &:after {
+      top: 14px !important;
+    }
+  }
+  &_datepicker {
+    input {
+      background: transparent;
+    }
+    svg {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 24px;
+      height: 26px;
+      fill: #3e66c8;
+      z-index: -1;
+    }
+  }
+}
+
+.panel-content__input_w70{
+  width: 70%;
+}
+
+.panel-content__input_w80{
+  width: 80%;
+}
+
+.panel-content__input-text{
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  padding: 8px 10px;
+}
+
+.panel-content__input-textarea {
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  padding: 8px 10px;
+  min-height: 150px;
+}
+
+.content{
+  &:after{
+    @include clear();
+  }
+}
+
+.block-shadow{
+  box-shadow: 0 0 6px rgba(110, 110, 110, 0.75);
+  padding: 25px;
+}
+
+.tac{
+  text-align: center;
+}
+
+.mt0{
+  margin-top: 0;
+}

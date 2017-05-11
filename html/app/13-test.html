@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+</head>
+
+<body>
+   @@include('../includes/common/browserhappy.html', {})
+   @@include('../includes/blocks/index-header.html', {})
+   @@include('../includes/blocks/search-panel.html', {})
+   @@include('../includes/blocks/breadcrumbs.html', {})
+
+   <main>
+
+      <div class="container row">
+         <aside class="left-panel">
+
+            @@include('../includes/blocks/teacher-info.html', {})
+
+            @@include('../includes/blocks/left-panel__cat-links.html', {})
+
+         </aside>
+         <div class="panel-content">
+
+            @@include('../includes/blocks/title-block.html', {})
+
+            <div class="test">
+               <div class="test__img">
+                  <img src="/img/temp/test-1.jpg" alt="">
+               </div>
+
+               <div class="test__answer-box">
+                  <div class="radio-item">
+                     <input id="test1" name="test" type="radio" checked>
+                     <label for="test1">Правильный вариант. Ответ. Правильный вариант. Ответ. Правильный вариант. Ответ.</label>
+                  </div>
+                  <div class="radio-item">
+                     <input id="test2" name="test" type="radio">
+                     <label for="test2" >Неправильный вариант. Ответ. Неправильный вариант. Ответ.</label>
+                  </div>
+                  <div class="radio-item">
+                     <input id="test3" name="test" type="radio">
+                     <label for="test3" >Неправильный вариант. Ответ. Неправильный вариант. Ответ.</label>
+                  </div>
+               </div>
+
+               <div class="test__controls d-t">
+                  <div class="d-tr">
+                     <div class="d-tc">
+                        <a href="#" class="button button_width_230px button_color_gray button_font-size_big-text button_size_common">Назад</a>
+                     </div>
+                     <div class="d-tc ta-c">
+                        <a href="#" class="button button_width_230px button_color_common-dark button_font-size_big-text button_size_common">проверить</a>
+                     </div>
+                     <div class="d-tc ta-r">
+                        <a href="#" class="button button_width_230px button_color_gray button_font-size_big-text button_size_common">Вперед</a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+
+   </main>
+
+   @@include('../includes/blocks/footer.html', {})
+   @@include('../includes/common/scripts.html', {})
+
+</body>
+</html>
+

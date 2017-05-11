@@ -1,0 +1,155 @@
+.news-bar{
+  margin: 20px 0;
+
+  &:after{
+    @include clear();
+  }
+
+  .link {
+    display: inline-block;
+    font-size: 21px;
+    &:before{
+      content: "";
+      display: inline-block;
+      @include sprite($calendar-blue);
+      position: relative;
+      top: 4px;
+      right: 7px;
+    }
+  }
+
+  .button_rss{
+    padding-left: 0;
+  }
+}
+
+.news-block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  font-size: 14px;
+  color: #a1a1a1;
+  width: 48%;
+  height: 226px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 0 5px rgba(102, 102, 102, 0.75);
+
+  &:nth-of-type(2n){
+    margin-left: 1.8%;
+  }
+
+  &:nth-of-type(2n+1){
+    margin-right: 1.8%;
+  }
+
+  &:hover {
+    color: #333;
+    .news-content {
+      width: 57%;
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.news-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-position: top right;
+  background-size: cover;
+  z-index: 1;
+}
+
+.news-content {
+  position: absolute;
+  transition: .5s;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 226px;
+  background: #fff;
+  z-index: 2;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    height: 100%;
+    width: 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    border-width: 113px 30px 113px 30px;
+  }
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2a4688;
+    font-weight: normal;
+  }
+}
+
+.news-content-box {
+  height: 170px;
+  overflow: hidden;
+}
+
+.news-description {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.news-content-bar {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 3;
+}
+
+.news-date {
+  display: inline-block;
+  font-size: 12px;
+  color: #98969a;
+  vertical-align: middle;
+  margin-right: 10px;
+  &:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    margin-right: 7px;
+    @include sprite($calendar);
+  }
+}
+
+.news-picture{
+  max-width: 660px;
+  max-height: 550px;
+  float: left;
+  margin: 0 40px 0 0;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.news-text{
+  margin-top: 18px;
+  margin-bottom: 50px;
+
+  p{
+    font: 20px/1.3 $lightfont;
+  }
+}
+
+.widget{
+  text-align: right;
+  margin-bottom: 40px;
+}

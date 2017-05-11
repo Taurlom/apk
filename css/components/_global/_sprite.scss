@@ -1,0 +1,358 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$calendar-blue-name: 'calendar-blue';
+$calendar-blue-x: 54px;
+$calendar-blue-y: 40px;
+$calendar-blue-offset-x: -54px;
+$calendar-blue-offset-y: -40px;
+$calendar-blue-width: 23px;
+$calendar-blue-height: 25px;
+$calendar-blue-total-width: 125px;
+$calendar-blue-total-height: 95px;
+$calendar-blue-image: '/img/sprite.png';
+$calendar-blue: (54px, 40px, -54px, -40px, 23px, 25px, 125px, 95px, '/img/sprite.png', 'calendar-blue', );
+$calendar-name: 'calendar';
+$calendar-x: 0px;
+$calendar-y: 79px;
+$calendar-offset-x: 0px;
+$calendar-offset-y: -79px;
+$calendar-width: 15px;
+$calendar-height: 16px;
+$calendar-total-width: 125px;
+$calendar-total-height: 95px;
+$calendar-image: '/img/sprite.png';
+$calendar: (0px, 79px, 0px, -79px, 15px, 16px, 125px, 95px, '/img/sprite.png', 'calendar', );
+$checkbox-mark-name: 'checkbox-mark';
+$checkbox-mark-x: 44px;
+$checkbox-mark-y: 79px;
+$checkbox-mark-offset-x: -44px;
+$checkbox-mark-offset-y: -79px;
+$checkbox-mark-width: 9px;
+$checkbox-mark-height: 8px;
+$checkbox-mark-total-width: 125px;
+$checkbox-mark-total-height: 95px;
+$checkbox-mark-image: '/img/sprite.png';
+$checkbox-mark: (44px, 79px, -44px, -79px, 9px, 8px, 125px, 95px, '/img/sprite.png', 'checkbox-mark', );
+$double-arr-up-name: 'double-arr_up';
+$double-arr-up-x: 94px;
+$double-arr-up-y: 0px;
+$double-arr-up-offset-x: -94px;
+$double-arr-up-offset-y: 0px;
+$double-arr-up-width: 31px;
+$double-arr-up-height: 27px;
+$double-arr-up-total-width: 125px;
+$double-arr-up-total-height: 95px;
+$double-arr-up-image: '/img/sprite.png';
+$double-arr-up: (94px, 0px, -94px, 0px, 31px, 27px, 125px, 95px, '/img/sprite.png', 'double-arr_up', );
+$icon-rss-name: 'icon-rss';
+$icon-rss-x: 54px;
+$icon-rss-y: 0px;
+$icon-rss-offset-x: -54px;
+$icon-rss-offset-y: 0px;
+$icon-rss-width: 30px;
+$icon-rss-height: 30px;
+$icon-rss-total-width: 125px;
+$icon-rss-total-height: 95px;
+$icon-rss-image: '/img/sprite.png';
+$icon-rss: (54px, 0px, -54px, 0px, 30px, 30px, 125px, 95px, '/img/sprite.png', 'icon-rss', );
+$left-name: 'left';
+$left-x: 0px;
+$left-y: 0px;
+$left-offset-x: 0px;
+$left-offset-y: 0px;
+$left-width: 17px;
+$left-height: 69px;
+$left-total-width: 125px;
+$left-total-height: 95px;
+$left-image: '/img/sprite.png';
+$left: (0px, 0px, 0px, 0px, 17px, 69px, 125px, 95px, '/img/sprite.png', 'left', );
+$loupe-name: 'loupe';
+$loupe-x: 94px;
+$loupe-y: 37px;
+$loupe-offset-x: -94px;
+$loupe-offset-y: -37px;
+$loupe-width: 25px;
+$loupe-height: 25px;
+$loupe-total-width: 125px;
+$loupe-total-height: 95px;
+$loupe-image: '/img/sprite.png';
+$loupe: (94px, 37px, -94px, -37px, 25px, 25px, 125px, 95px, '/img/sprite.png', 'loupe', );
+$red-name: 'red';
+$red-x: 25px;
+$red-y: 79px;
+$red-offset-x: -25px;
+$red-offset-y: -79px;
+$red-width: 9px;
+$red-height: 9px;
+$red-total-width: 125px;
+$red-total-height: 95px;
+$red-image: '/img/sprite.png';
+$red: (25px, 79px, -25px, -79px, 9px, 9px, 125px, 95px, '/img/sprite.png', 'red', );
+$right-name: 'right';
+$right-x: 27px;
+$right-y: 0px;
+$right-offset-x: -27px;
+$right-offset-y: 0px;
+$right-width: 17px;
+$right-height: 69px;
+$right-total-width: 125px;
+$right-total-height: 95px;
+$right-image: '/img/sprite.png';
+$right: (27px, 0px, -27px, 0px, 17px, 69px, 125px, 95px, '/img/sprite.png', 'right', );
+$calendar-blue-2x-name: 'calendar-blue@2x';
+$calendar-blue-2x-x: 108px;
+$calendar-blue-2x-y: 80px;
+$calendar-blue-2x-offset-x: -108px;
+$calendar-blue-2x-offset-y: -80px;
+$calendar-blue-2x-width: 46px;
+$calendar-blue-2x-height: 50px;
+$calendar-blue-2x-total-width: 250px;
+$calendar-blue-2x-total-height: 190px;
+$calendar-blue-2x-image: '/img/sprite2x.png';
+$calendar-blue-2x: (108px, 80px, -108px, -80px, 46px, 50px, 250px, 190px, '/img/sprite2x.png', 'calendar-blue@2x', );
+$calendar-2x-name: 'calendar@2x';
+$calendar-2x-x: 0px;
+$calendar-2x-y: 158px;
+$calendar-2x-offset-x: 0px;
+$calendar-2x-offset-y: -158px;
+$calendar-2x-width: 30px;
+$calendar-2x-height: 32px;
+$calendar-2x-total-width: 250px;
+$calendar-2x-total-height: 190px;
+$calendar-2x-image: '/img/sprite2x.png';
+$calendar-2x: (0px, 158px, 0px, -158px, 30px, 32px, 250px, 190px, '/img/sprite2x.png', 'calendar@2x', );
+$checkbox-mark-2x-name: 'checkbox-mark@2x';
+$checkbox-mark-2x-x: 88px;
+$checkbox-mark-2x-y: 158px;
+$checkbox-mark-2x-offset-x: -88px;
+$checkbox-mark-2x-offset-y: -158px;
+$checkbox-mark-2x-width: 18px;
+$checkbox-mark-2x-height: 16px;
+$checkbox-mark-2x-total-width: 250px;
+$checkbox-mark-2x-total-height: 190px;
+$checkbox-mark-2x-image: '/img/sprite2x.png';
+$checkbox-mark-2x: (88px, 158px, -88px, -158px, 18px, 16px, 250px, 190px, '/img/sprite2x.png', 'checkbox-mark@2x', );
+$double-arr-up-2x-name: 'double-arr_up@2x';
+$double-arr-up-2x-x: 188px;
+$double-arr-up-2x-y: 0px;
+$double-arr-up-2x-offset-x: -188px;
+$double-arr-up-2x-offset-y: 0px;
+$double-arr-up-2x-width: 62px;
+$double-arr-up-2x-height: 54px;
+$double-arr-up-2x-total-width: 250px;
+$double-arr-up-2x-total-height: 190px;
+$double-arr-up-2x-image: '/img/sprite2x.png';
+$double-arr-up-2x: (188px, 0px, -188px, 0px, 62px, 54px, 250px, 190px, '/img/sprite2x.png', 'double-arr_up@2x', );
+$icon-rss-2x-name: 'icon-rss@2x';
+$icon-rss-2x-x: 108px;
+$icon-rss-2x-y: 0px;
+$icon-rss-2x-offset-x: -108px;
+$icon-rss-2x-offset-y: 0px;
+$icon-rss-2x-width: 60px;
+$icon-rss-2x-height: 60px;
+$icon-rss-2x-total-width: 250px;
+$icon-rss-2x-total-height: 190px;
+$icon-rss-2x-image: '/img/sprite2x.png';
+$icon-rss-2x: (108px, 0px, -108px, 0px, 60px, 60px, 250px, 190px, '/img/sprite2x.png', 'icon-rss@2x', );
+$left-2x-name: 'left@2x';
+$left-2x-x: 0px;
+$left-2x-y: 0px;
+$left-2x-offset-x: 0px;
+$left-2x-offset-y: 0px;
+$left-2x-width: 34px;
+$left-2x-height: 138px;
+$left-2x-total-width: 250px;
+$left-2x-total-height: 190px;
+$left-2x-image: '/img/sprite2x.png';
+$left-2x: (0px, 0px, 0px, 0px, 34px, 138px, 250px, 190px, '/img/sprite2x.png', 'left@2x', );
+$loupe-2x-name: 'loupe@2x';
+$loupe-2x-x: 188px;
+$loupe-2x-y: 74px;
+$loupe-2x-offset-x: -188px;
+$loupe-2x-offset-y: -74px;
+$loupe-2x-width: 50px;
+$loupe-2x-height: 50px;
+$loupe-2x-total-width: 250px;
+$loupe-2x-total-height: 190px;
+$loupe-2x-image: '/img/sprite2x.png';
+$loupe-2x: (188px, 74px, -188px, -74px, 50px, 50px, 250px, 190px, '/img/sprite2x.png', 'loupe@2x', );
+$red-2x-name: 'red@2x';
+$red-2x-x: 50px;
+$red-2x-y: 158px;
+$red-2x-offset-x: -50px;
+$red-2x-offset-y: -158px;
+$red-2x-width: 18px;
+$red-2x-height: 18px;
+$red-2x-total-width: 250px;
+$red-2x-total-height: 190px;
+$red-2x-image: '/img/sprite2x.png';
+$red-2x: (50px, 158px, -50px, -158px, 18px, 18px, 250px, 190px, '/img/sprite2x.png', 'red@2x', );
+$right-2x-name: 'right@2x';
+$right-2x-x: 54px;
+$right-2x-y: 0px;
+$right-2x-offset-x: -54px;
+$right-2x-offset-y: 0px;
+$right-2x-width: 34px;
+$right-2x-height: 138px;
+$right-2x-total-width: 250px;
+$right-2x-total-height: 190px;
+$right-2x-image: '/img/sprite2x.png';
+$right-2x: (54px, 0px, -54px, 0px, 34px, 138px, 250px, 190px, '/img/sprite2x.png', 'right@2x', );
+$spritesheet-width: 125px;
+$spritesheet-height: 95px;
+$spritesheet-image: '/img/sprite.png';
+$spritesheet-sprites: ($calendar-blue, $calendar, $checkbox-mark, $double-arr-up, $icon-rss, $left, $loupe, $red, $right, );
+$spritesheet: (125px, 95px, '/img/sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 250px;
+$retina-spritesheet-height: 190px;
+$retina-spritesheet-image: '/img/sprite2x.png';
+$retina-spritesheet-sprites: ($calendar-blue-2x, $calendar-2x, $checkbox-mark-2x, $double-arr-up-2x, $icon-rss-2x, $left-2x, $loupe-2x, $red-2x, $right-2x, );
+$retina-spritesheet: (250px, 190px, '/img/sprite2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$calendar-blue-group-name: 'calendar-blue';
+$calendar-blue-group: ('calendar-blue', $calendar-blue, $calendar-blue-2x, );
+$calendar-group-name: 'calendar';
+$calendar-group: ('calendar', $calendar, $calendar-2x, );
+$checkbox-mark-group-name: 'checkbox-mark';
+$checkbox-mark-group: ('checkbox-mark', $checkbox-mark, $checkbox-mark-2x, );
+$double-arr-up-group-name: 'double-arr_up';
+$double-arr-up-group: ('double-arr_up', $double-arr-up, $double-arr-up-2x, );
+$icon-rss-group-name: 'icon-rss';
+$icon-rss-group: ('icon-rss', $icon-rss, $icon-rss-2x, );
+$left-group-name: 'left';
+$left-group: ('left', $left, $left-2x, );
+$loupe-group-name: 'loupe';
+$loupe-group: ('loupe', $loupe, $loupe-2x, );
+$red-group-name: 'red';
+$red-group: ('red', $red, $red-2x, );
+$right-group-name: 'right';
+$right-group: ('right', $right, $right-2x, );
+$retina-groups: ($calendar-blue-group, $calendar-group, $checkbox-mark-group, $double-arr-up-group, $icon-rss-group, $left-group, $loupe-group, $red-group, $right-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

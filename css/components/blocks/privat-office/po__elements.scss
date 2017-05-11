@@ -1,0 +1,144 @@
+// services-row
+.po__services-row {
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.po__services-text {
+  font-size: 13.33px;
+  color: #12275a;
+  text-transform: uppercase;
+}
+.po__services-select {
+  display: inline-block;
+  white-space: normal;
+  width: 196px;
+  margin: 0 5px;
+}
+
+// material-services
+.po__material-services-buttons {
+  white-space: nowrap;
+}
+.po__searsh-form {
+  position: relative;
+  span {
+    font-size: 10px;
+    vertical-align: middle;
+  }
+  input[type="search"] {
+    width: 290px;
+    height: 36px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    padding: 0 30px 0 10px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  button {
+    position: absolute;
+    transition: .5s;
+    top: 7px;
+    right: 9px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url("/img/sprite-smith/loupe.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+// material-list
+.po-mat-list {
+  margin-top: 30px;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+.po-mat-list__header {
+  .d-tc {
+    text-align: center;
+    font: 10.67px $mediumfont;
+    text-transform: uppercase;
+    padding: 10px 10px 0;
+    &:first-of-type {
+      text-align: left;
+      padding-left: 50px;
+    }
+  }
+}
+.po-mat-list__row {
+  .d-tc {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 10px;
+    text-align: center;
+    &:first-of-type {
+      border-left: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      text-align: left;
+      padding-left: 20px;
+    }
+    &:last-of-type {
+      border-right: 1px solid #ccc;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+.po-mat-list__link {
+  transition: .3s;
+  color: #12275a;
+  border-bottom: 1px solid #12275a;
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+}
+.po-mat-list__user-link {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #3e66c8;
+}
+.po-mat-list__gray-small {
+  text-align: center;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+.po-mat-list__text {
+  text-align: center;
+  font-size: 12px;
+  &_moder {
+    color: #000;
+  }
+  &_expert {
+    color: #90be77;
+  }
+  &_admin,
+  &_alert {
+    color: #ff3914;
+  }
+}
+
+.po-mat-list__control-btns {
+  a {
+    border-bottom: none;
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.form-material-type {
+  display: block;
+  font: 17px GothamProBold, sans-serif;
+  color: #12275a;
+  text-transform: uppercase;
+  height: 36px;
+  line-height: 36px;
+}
+
+.po-form-notice {
+  margin: 50px 0 20px;
+  font: bold 17.33px $basefont;
+  color: #12275a;
+}

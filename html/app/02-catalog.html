@@ -1,0 +1,588 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+</head>
+
+<body>
+   @@include('../includes/common/browserhappy.html', {})
+   @@include('../includes/blocks/index-header.html', {})
+   @@include('../includes/blocks/search-panel.html', {})
+   @@include('../includes/blocks/breadcrumbs.html', {})
+
+   <main>
+
+      <div class="container row">
+         <aside class="left-panel">
+
+            @@include('../includes/blocks/left-panel__cat-links.html', {})
+
+            <section class="filters">
+               <h2>Фильтр</h2>
+
+               <form class="filters__box">
+
+                  <div class="filters__block">
+                     <h3>РАЗДЕЛЫ</h3>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-1-chk-1" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-1-chk-1">Общие положения</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-1-chk-2" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-1-chk-2">Общие обязанности водителей</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-1-chk-3" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-1-chk-3">Применение специальных сигналов</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-1-chk-4" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-1-chk-4">Обязанности пешеходов</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-1-chk-5" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-1-chk-5">Обязанности пассажиров</label>
+                     </div>
+
+                     <a href="#" class="filters__more-link">Еще</a>
+                  </div>
+
+                  <div class="filters__block">
+                     <h3>ФОРМАТЫ МАТЕРИАЛОВ</h3>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-2-chk-1" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-2-chk-1">ЭОР</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-2-chk-2" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-2-chk-2">Аудио</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-2-chk-3" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-2-chk-3">Видео</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-2-chk-4" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-2-chk-4">Изображение</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-2-chk-5" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-2-chk-5">Инфографика</label>
+                     </div>
+
+
+                     <a href="#" class="filters__more-link">Еще</a>
+                  </div>
+
+                  <div class="filters__block">
+                     <h3>КАТЕГОРИЯ</h3>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-3-chk-1" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-3-chk-1">Детям</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-3-chk-2" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-3-chk-2">Родителям</label>
+                     </div>
+
+                     <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="filter-3-chk-3" type="checkbox"/>
+                        <label class="checkbox-item__checkbox-label" for="filter-3-chk-3">Педадгогам / воспитателям</label>
+                     </div>
+
+                  </div>
+
+                  <button class="button button_size_common button_color_common-dark" type="submit">Применить</button>
+
+               </form>
+
+            </section>
+
+         </aside>
+         <div class="panel-content">
+            <div class="themes">
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-01.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Иванов С.С.
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_camera">
+                        <span>12</span>
+                        <svg class="svg-themes-type_camera-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_camera"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-02.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_pic">
+                        <span>12</span>
+                        <svg class="svg-themes-type_pic-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_pic"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-03.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_foto">
+                        <span>12</span>
+                        <svg class="svg-themes-type_foto-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_foto"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-04.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_comment">
+                        <span>23</span>
+                        <svg class="svg-themes-type_comment-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_comment"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-01.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Иванов С.С.
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_camera">
+                        <span>12</span>
+                        <svg class="svg-themes-type_camera-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_camera"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-02.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_pic">
+                        <span>12</span>
+                        <svg class="svg-themes-type_pic-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_pic"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-03.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_foto">
+                        <span>12</span>
+                        <svg class="svg-themes-type_foto-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_foto"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-04.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_comment">
+                        <span>23</span>
+                        <svg class="svg-themes-type_comment-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_comment"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-01.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Иванов С.С.
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_camera">
+                        <span>12</span>
+                        <svg class="svg-themes-type_camera-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_camera"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-02.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_pic">
+                        <span>12</span>
+                        <svg class="svg-themes-type_pic-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_pic"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-03.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_foto">
+                        <span>12</span>
+                        <svg class="svg-themes-type_foto-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_foto"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+               <a href="#" class="themes__block">
+                  <div class="themes__img" style="background-image: url('/img/temp/catalog-themes-04.jpg')"></div>
+                  <div class="themes__text-row">
+                     <span>Автор</span>
+                     Васильева Г. О
+                  </div>
+                  <div class="themes__text-row themes__text-row_dotted dotdotdot">
+                     <span>Тема</span>
+                     Проект «Дорога и дети» ориентирован на младших школьников до 10 лет
+                  </div>
+                  <div class="themes__bar">
+                     <div class="themes__type themes__type_comment">
+                        <span>23</span>
+                        <svg class="svg-themes-type_comment-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#themes-type_comment"></use>
+                        </svg>
+                     </div>
+                     <div class="stars">
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims star_active">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                        <svg class="svg-star-dims">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#star"></use>
+                        </svg>
+                     </div>
+
+                  </div>
+               </a>
+
+            </div>
+
+            @@include('../includes/blocks/pagination.html', {})
+
+         </div>
+      </div>
+
+   </main>
+
+   @@include('../includes/blocks/footer.html', {})
+   @@include('../includes/common/scripts.html', {})
+
+</body>
+</html>
+

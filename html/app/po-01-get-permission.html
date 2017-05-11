@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+</head>
+
+<body>
+   @@include('../includes/common/browserhappy.html', {})
+   @@include('../includes/blocks/po-header.html', {})
+   @@include('../includes/blocks/search-panel.html', {})
+   @@include('../includes/blocks/breadcrumbs.html', {})
+
+   <main>
+
+      <div class="container row">
+
+         <aside class="left-panel left-panel_privat-office">
+            @@include('../includes/blocks/po__left-panel.html', {
+               "img": "po-face-1.jpg",
+               "name": "Иванов Иван Иванович",
+               "type": "moder",
+               "type-text": "Модератор"
+            })
+         </aside>
+
+         <div class="panel-content panel-content_privat-office">
+
+            <div class="text-block text-block_first-top text-block_font_light">
+               <p>
+                  Доброе время суток, уважаемый Пользователь.
+                  <br><br>
+               </p>
+               <p>
+                  Для того чтобы иметь возможность размещать материалы на нашем ресурсе Вам необходимо получить права эксперта или модератора.
+               </p>
+            </div>
+
+            <div class="po-application">
+
+               <div class="po-application__block _parent">
+                  Чтобы получить права эксперта Вам нужно:
+                  <ol class="po-application__list">
+                     <li>Заполнить профиль</li>
+                     <li>Отправить заявку на получение прав <b>"Эксперт"</b></li>
+                  </ol>
+                  <div class="po-application__button-box">
+                     <a href="#" class="button button_color_common-dark button_font-size_big-text _po_app-btn">стать экспертом</a>
+                  </div>
+                  <div class="po-application__send-box _child">
+                     <div class="po-application__send-text">
+                        Ваш запрос на получение прав <b>"Эксперт"</b> направлен администратору и будет обработан в ближайшее время.
+                     </div>
+                  </div>
+               </div>
+
+               <div class="po-application__block _parent">
+                  Чтобы получить права модератора Вам нужно:
+                  <ol class="po-application__list">
+                     <li>Заполнить профиль</li>
+                     <li>Отправить заявку на получение прав <b>"Модератор"</b></li>
+                  </ol>
+                  <div class="po-application__button-box">
+                     <a href="#" class="button button_color_common button_font-size_big-text _po_app-btn">стать модератором</a>
+                  </div>
+                  <div class="po-application__send-box _child">
+                     <div class="po-application__send-text">
+                        Ваш запрос на получение прав <b>"Модератор"</b> направлен администратору и будет обработан в ближайшее время.
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+
+   </main>
+
+   @@include('../includes/blocks/footer.html', {})
+   @@include('../includes/common/scripts.html', {})
+
+</body>
+</html>
+

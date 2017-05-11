@@ -1,0 +1,22 @@
+.custom-scroll {
+  .mCSB_scrollTools {
+    background: #fff;
+    width: 8px;
+    .mCSB_draggerContainer {
+      background: #dcdcdc;
+      left: 0;
+      top: 0;
+    }
+    .mCSB_draggerRail {
+      background: #dcdcdc;
+    }
+    .mCSB_dragger {
+      .mCSB_dragger_bar {
+        width: 8px;
+        background: #3e66c8;
+        border: none;
+        border-radius: 2px;
+      }
+    }
+  }
+}

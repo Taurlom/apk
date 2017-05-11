@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>БДД-2</title>
+<meta name="description" content="">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+   <!--[if lte IE 8]>
+<style>
+   .browserupgrade {text-align: center;border: 2px solid #b4b472;font-size: 20px;padding: 20px;position: fixed;background: #333;color: #c1bea2;width: 400px;left: 50%;margin-left: -200px;z-index: 999999;}
+   .browserupgrade a {color: #fff;}
+   .browserupgrade a:hover {color: #e0c1ff;text-decoration: none;}
+</style>
+<p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста<br/> <a
+        href="http://browsehappy.com/">обновите ваш браузер или установите альтернативный</a><br/> для корректного
+   отображения содержимого сайта.</p>
+<![endif]-->
+
+   <div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header-table">
+                <div class="header-col">
+                    <a href="/" class="header__logo">
+                        <img src="/img/logo.png" alt="На главную">
+                    </a>
+                </div>
+                <nav class="header-col">
+                    <ul class="header-nav">
+                        <li class="hn-about">
+                            <a href="#">
+                                <svg class="svg-h-traffic-light-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-traffic-light"></use>
+                                </svg>
+                                О проекте
+                            </a>
+                        </li>
+                        <li class="hn-cat">
+                            <a href="#">
+                                <svg class="svg-h-folder-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-folder"></use>
+                                </svg>
+                                каталог
+                            </a>
+                        </li>
+                        <li class="hn-news">
+                            <a href="#">
+                                <svg class="svg-h-flag-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-flag"></use>
+                                </svg>
+                                новости
+                            </a>
+                        </li>
+                        <li class="hn-docs">
+                            <a href="#">
+                                <svg class="svg-h-tablet-dims">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-tablet"></use>
+                                </svg>
+                                нормативные документы
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-col ta-r">
+                    <a href="#" class="special-view-link">
+                        <svg class="svg-h-glasses-dims">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#h-glasses"></use>
+                        </svg>
+                        Версия для слабовидящих
+                    </a>
+                    <div class="header__buttons">
+                        <a href="#" class="button button_color_common">ВХОД</a>
+                        <a href="#" class="button button_color_common-light">РЕГИСТРАЦИЯ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <section class="search-panel">
+    <div class="container">
+        <h2>Федеральный каталог
+            <span>Интерактивных образовательных программ</span>
+        </h2>
+        <div class="search-panel__col-right">
+            <form class="search-form" action="">
+                <div class="search-hamburger _search-hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <input class="search-panel__input" type="search" placeholder="Введите поисковое слово (фразу)">
+                <button type="submit"></button>
+                <div class="advanced-search" style="display: none;">
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-1" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-1">Дошкольникам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-2" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-2">Школьникам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-3" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-3">Педагогам/Воспитателям</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-4" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-4">По темам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-5" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-5">По авторам</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-6" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-6">По возрасту</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-7" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-7">Фотогалерея/Картинки</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input class="checkbox-item__checkbox" id="search-chk-8" type="checkbox">
+                        <label class="checkbox-item__checkbox-label" for="search-chk-8">Видео</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+   <div class="breadcrumbs__wrapper">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li>Образовательные курсы</li>
+        </ul>
+    </div>
+</div>
+
+   <main>
+      <div class="container">
+         <div class="news-bar">
+            <a href="#" class="link link_right">Архив новостей</a>
+            <a href="#" class="button button_rss">Подписаться</a>
+            <div class="buttons-group">
+               <a href="#" class="button button_size_middle button_color_alert">НОВОСТИ</a>
+               <a href="#" class="button button_size_middle button_color_attention">ОБЗОРЫ</a>
+               <a href="#" class="button button_size_middle button_color_default">АНОНСЫ</a>
+            </div>
+         </div>
+
+         <div class="content">
+
+             <a href="#" class="news-block">
+                 <div class="news-img" style="background-image: url('/img/temp/news2.jpg');"></div>
+                 <div class="news-content">
+                     <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                         <h3>На эстакаду на Волгоградском проспекте в Москве пустили автомобилистов</h3>
+                         <div class="news-description">
+                             По новой эстакаде на Волгоградке в Москве автомобили могут проезжать по трем полосам в каждую сторону.
+                         </div>
+                     </div>
+                     <div class="news-content-bar">
+                         <div class="news-date">12.05.2017</div>
+                         <span class="button button_size_small pseudo button_color_default">Анонсы</span>
+                     </div>
+                 </div>
+             </a>
+
+             <a href="#" class="news-block">
+              <div class="news-img" style="background-image: url('/img/temp/news3.jpg');"></div>
+              <div class="news-content">
+                 <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                    <h3>Выпускники с двойными компетенциями – кадровый ресурс будущего</h3>
+                    <div class="news-description">
+                        До конца 2016 года в Подмосковье проверят все детские площадки, сообщает пресс-служба Главного управления государственного административно-технического надзора Московской области.
+                    </div>
+                 </div>
+                  <div class="news-content-bar">
+                      <div class="news-date">12.05.2017</div>
+                      <span class="button button_size_small pseudo button_color_alert">Новости</span>
+                  </div>
+              </div>
+           </a>
+
+             <a href="#" class="news-block">
+                <div class="news-img" style="background-image: url('/img/temp/news1.jpg');"></div>
+                <div class="news-content">
+                    <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                        <h3>Парад городской техники в Москве попал в книги рекордов России и Европы</h3>
+                        <div class="news-description">
+                            Парад городской техники в Москве установил два рекорда - колонная спецтехники стала самой многочисленной за историю России и Европы. Об этом сообщает пресс-центр правительства Москвы. Парад состоялся 11 сентября.
+                        </div>
+                    </div>
+                    <div class="news-content-bar">
+                        <div class="news-date">12.05.2017</div>
+                        <span class="button button_size_small pseudo button_color_alert">Новости</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="news-block">
+                 <div class="news-img" style="background-image: url('/img/temp/news4.jpg');"></div>
+                 <div class="news-content">
+                     <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                         <h3>В правительстве России готовятся предложения по индексации в 2017 году маткапитала – Голодец</h3>
+                         <div class="news-description">
+                             Вице-премьер Ольга Голодец заявила, что в правительстве России готовятся предложения по индексации в 2017 году материнского капитала, сообщает ТАСС.
+                         </div>
+                     </div>
+                     <div class="news-content-bar">
+                         <div class="news-date">12.05.2017</div>
+                         <span class="button button_size_small pseudo button_color_attention">Обзор</span>
+                     </div>
+                 </div>
+             </a>
+
+             <a href="#" class="news-block">
+                <div class="news-img" style="background-image: url('/img/temp/news1.jpg');"></div>
+                <div class="news-content">
+                    <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                        <h3>Парад городской техники в Москве попал в книги рекордов России и Европы</h3>
+                        <div class="news-description">
+                            Парад городской техники в Москве установил два рекорда - колонная спецтехники стала самой многочисленной за историю России и Европы. Об этом сообщает пресс-центр правительства Москвы. Парад состоялся 11 сентября.
+                        </div>
+                    </div>
+                    <div class="news-content-bar">
+                        <div class="news-date">12.05.2017</div>
+                        <span class="button button_size_small pseudo button_color_alert">Новости</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="news-block">
+                <div class="news-img" style="background-image: url('/img/temp/news3.jpg');"></div>
+                <div class="news-content">
+                    <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                        <h3>Выпускники с двойными компетенциями – кадровый ресурс будущего</h3>
+                        <div class="news-description">
+                            До конца 2016 года в Подмосковье проверят все детские площадки, сообщает пресс-служба Главного управления государственного административно-технического надзора Московской области.
+                        </div>
+                    </div>
+                    <div class="news-content-bar">
+                        <div class="news-date">12.05.2017</div>
+                        <span class="button button_size_small pseudo button_color_alert">Новости</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="news-block">
+              <div class="news-img" style="background-image: url('/img/temp/news2.jpg');"></div>
+              <div class="news-content">
+                 <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                    <h3>На эстакаду на Волгоградском проспекте в Москве пустили автомобилистов</h3>
+                    <div class="news-description">
+                        По новой эстакаде на Волгоградке в Москве автомобили могут проезжать по трем полосам в каждую сторону.
+                    </div>
+                 </div>
+                 <div class="news-content-bar">
+                    <div class="news-date">12.05.2017</div>
+                    <span class="button button_size_small pseudo button_color_default">Анонсы</span>
+                 </div>
+              </div>
+           </a>
+
+             <a href="#" class="news-block">
+              <div class="news-img" style="background-image: url('/img/temp/news4.jpg');"></div>
+              <div class="news-content">
+                 <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                    <h3>В правительстве России готовятся предложения по индексации в 2017 году маткапитала – Голодец</h3>
+                    <div class="news-description">
+                        Вице-премьер Ольга Голодец заявила, что в правительстве России готовятся предложения по индексации в 2017 году материнского капитала, сообщает ТАСС.
+                    </div>
+                 </div>
+                 <div class="news-content-bar">
+                    <div class="news-date">12.05.2017</div>
+                    <span class="button button_size_small pseudo button_color_attention">Обзор</span>
+                 </div>
+              </div>
+           </a>
+
+             <a href="#" class="news-block">
+                 <div class="news-img" style="background-image: url('/img/temp/news3.jpg');"></div>
+                 <div class="news-content">
+                     <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                         <h3>Выпускники с двойными компетенциями – кадровый ресурс будущего</h3>
+                         <div class="news-description">
+                             До конца 2016 года в Подмосковье проверят все детские площадки, сообщает пресс-служба Главного управления государственного административно-технического надзора Московской области.
+                         </div>
+                     </div>
+                     <div class="news-content-bar">
+                         <div class="news-date">12.05.2017</div>
+                         <span class="button button_size_small pseudo button_color_alert">Новости</span>
+                     </div>
+                 </div>
+             </a>
+
+             <a href="#" class="news-block">
+                <div class="news-img" style="background-image: url('/img/temp/news4.jpg');"></div>
+                <div class="news-content">
+                    <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                        <h3>В правительстве России готовятся предложения по индексации в 2017 году маткапитала – Голодец</h3>
+                        <div class="news-description">
+                            Вице-премьер Ольга Голодец заявила, что в правительстве России готовятся предложения по индексации в 2017 году материнского капитала, сообщает ТАСС.
+                        </div>
+                    </div>
+                    <div class="news-content-bar">
+                        <div class="news-date">12.05.2017</div>
+                        <span class="button button_size_small pseudo button_color_attention">Обзор</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="news-block">
+                <div class="news-img" style="background-image: url('/img/temp/news2.jpg');"></div>
+                <div class="news-content">
+                    <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                        <h3>На эстакаду на Волгоградском проспекте в Москве пустили автомобилистов</h3>
+                        <div class="news-description">
+                            По новой эстакаде на Волгоградке в Москве автомобили могут проезжать по трем полосам в каждую сторону.
+                        </div>
+                    </div>
+                    <div class="news-content-bar">
+                        <div class="news-date">12.05.2017</div>
+                        <span class="button button_size_small pseudo button_color_default">Анонсы</span>
+                    </div>
+                </div>
+            </a>
+
+             <a href="#" class="news-block">
+                 <div class="news-img" style="background-image: url('/img/temp/news3.jpg');"></div>
+                 <div class="news-content">
+                     <div class="news-content-box dotdotdot" style="word-wrap: break-word;">
+                         <h3>Выпускники с двойными компетенциями – кадровый ресурс будущего</h3>
+                         <div class="news-description">
+                             До конца 2016 года в Подмосковье проверят все детские площадки, сообщает пресс-служба Главного управления государственного административно-технического надзора Московской области.
+                         </div>
+                     </div>
+                     <div class="news-content-bar">
+                         <div class="news-date">12.05.2017</div>
+                         <span class="button button_size_small pseudo button_color_alert">Новости</span>
+                     </div>
+                 </div>
+             </a>
+
+         </div>
+
+         <div class="pagination">
+    <ul class="pagination__list">
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">назад</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link pagination__link_active">1</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">2</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">3</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">4</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">5</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">6</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link">далее</a>
+        </li>
+    </ul>
+</div>
+
+      </div>
+   </main>
+
+   </div>
+
+<footer>
+   <div class="container container_footer">
+      <div class="footer-table">
+         <div class="footer-col">
+            <ul class="footer__partners">
+               <li class="minobr"><a href="http://xn--80abucjiibhv9a.xn--p1ai/"><img src="/img/logo-minobr.png" alt="Минобр"></a></li>
+               <li class="bdd"><a href="#"><img src="/img/logo-bdd.png" alt=""></a></li>
+               <li class="rosobr"><a href="http://www.edu.ru/"><img src="/img/logo-rosobr.png" alt="Российское Образование"></a></li>
+               <li class="informika"><a href="http://informika.ru/"><img src="/img/logo-informika.png" alt="Информика"></a></li>
+            </ul>
+         </div>
+         <div class="footer-col col2">
+            <div class="footer__logo">
+               <img src="/img/logo-footer.png" alt="">
+            </div>
+            <div class="footer__copyright">
+               © Министерство образования и науки Российской Федерации, 2016
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class="mask"></div>
+<div class="scrollup">
+   <svg class="svg-up-arr-dims">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#up-arr"></use>
+   </svg>
+</div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
+<script src="/assets/js/bundle.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,137 @@
+// links
+
+.link {
+  color: $link-color;
+  text-decoration: underline;
+  &_right {
+    float: right;
+  }
+  &:hover {
+    text-decoration: none;
+    color: darken($link-color, 10%);
+  }
+}
+
+// --------
+
+.tags {
+  li {
+    display: inline-block;
+    a, span {
+      display: inline-block;
+      transition: .3s;
+      height: 20px;
+      line-height: 20px;
+      font-size: 13.33px;
+      background: $color_common-dark;
+      color: #fff;
+      padding: 0 10px;
+    }
+    a:hover {
+      background: darken($color_common-dark, 10%);
+    }
+  }
+}
+
+// --------
+
+.text-block {
+  margin: 30px 0;
+  &_font {
+    &_light {
+      font-family: $lightfont;
+    }
+  }
+  &_big-text {
+    p {
+      font-size: 20px;
+    }
+  }
+  &_first-top {
+    margin-top: 0;
+    p {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// --------
+
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .2;
+  z-index: 100;
+}
+
+// --------
+.scrollup {
+  position: fixed;
+  transition: .3s;
+  padding-top: 20px;
+  right: 10px;
+  bottom: 200px;
+  display: block;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: .5;
+  border: 2px solid #d0d0d0;
+  background: #fff;
+  z-index: 200;
+  svg {
+    width: 31px;
+    height: 19px;
+    fill: #d0d0d0;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.required{
+  &:after{
+    content: "";
+    display: inline-block;
+    @include sprite($red);
+  }
+}
+
+// --------
+
+.download-row {
+  margin: 30px 0 20px;
+}
+
+// --------
+
+.alert{
+  background: #e8e8e8;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 17px;
+}
+
+// --------
+
+.inline-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  &_width {
+    &_300px {
+      width: 300px;
+    }
+  }
+}
+
+// --------

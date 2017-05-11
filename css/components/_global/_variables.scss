@@ -1,0 +1,134 @@
+//mixins
+
+@mixin animated-underline($anim-color) {
+  & {
+    position: relative;
+    text-decoration: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $anim-color;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@mixin animated-topline($anim-color) {
+  & {
+    position: relative;
+    text-decoration: none;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+ @mixin transition($property, $time, $function, $delay) {
+  -webkit-transition: $property $time $function $delay;
+  -moz-transition: $property $time $function $delay;
+  transition: $property $time $function $delay;
+} 
+
+@mixin scaleX($x) {
+  -webkit-transform: scaleX($x);
+  -moz-transform: scaleX($x);
+  -ms-transform: scaleX($x);
+  transform: scaleX($x);
+}
+
+@mixin scaleY($y) {
+  -webkit-transform: scaleY($y);
+  -moz-transform: scaleY($y);
+  -ms-transform: scaleY($y);
+  transform: scaleY($y);
+}
+
+@mixin transform_scale($x, $y) {
+  -webkit-transform: scale($x) scale($y);
+  -moz-transform: scale($x) scale($y);
+  -ms-transform: scale($x) scale($y);
+  transform: scale($x) scale($y);
+}
+
+@mixin transform_translateX($x) {
+  -ms-transform: translateX($x);
+  -webkit-transform: translateX($x);
+  -moz-transform: translateX($x);
+  transform: translateX($x);
+}
+
+@mixin transform_translateY($y) {
+  -webkit-transform: translateY($y);
+  -moz-transform: translateY($y);
+  -ms-transform: translateX($y);
+  transform: translateY($y);
+}
+
+@mixin transform_translate($x, $y) {
+  -webkit-transform: translateX($x) translateY($y);
+  -moz-transform: translateX($x) translateY($y);
+  -ms-transform: translateX($x) translateY($y);
+  transform: translateX($x) translateY($y);
+}
+
+@mixin rotate($x) {
+  -ms-transform: translateX($x);
+  -webkit-transform: translateX($x);
+  -moz-transform: translateX($x);
+  transform: translateX($x);
+}
+
+@mixin rotate($value){
+  -webkit-transform: rotate($value);
+  transform: rotate($value);
+}
+
+@mixin clear() {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@mixin rotateY($value){
+  -webkit-transform: rotateY($value);
+  -moz-transform: translateY($value);
+  transform: rotateY($value);
+}
+
+@mixin transform_translate_scale($x, $y, $x1, $y1){
+  -webkit-transform: translateX($x) translateY($y) scale($x1, $y1);
+  -moz-transform: translateX($x) translateY($y) scale($x1, $y1);
+  -ms-transform: translateX($x) translateY($y) scale($x1, $y1);
+  transform: translateX($x) translateY($y) scale($x1, $y1);
+}

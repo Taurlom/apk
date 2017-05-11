@@ -1,0 +1,163 @@
+.content-form{
+  text-align: center;
+}
+
+.form-title{
+  font: 40px $basefont;
+  color: #12275a;
+}
+
+.form-block{
+  max-width: 718px;
+  /*height: 397px;*/
+  border: 1px solid #c4c4c4;
+  border-radius: 8px 7px 7px 8px;
+  margin: 20px auto 30px;
+  padding: 25px;
+  &:after{
+    @include clear();
+  }
+}
+
+.form-block__notice{
+  font: 17px $boldfont;
+  color: #12275a;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.form-block__label{
+  display: inline-block;
+  font-size: 17px;
+  color: #12275a;
+  padding-right: 10px;
+}
+
+.form-block__label-small{
+  display: block;
+  font-size: 14px;
+  color: #2e5bc9;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-block__wrap{
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+
+.form-block__link{
+  display: block;
+  font-size: 12px;
+  background-color: #949494;
+  border-radius: 4px;
+  padding: 12px 55px;
+  color: #fff;
+  text-transform: uppercase;
+  @include transition(background, 0.3s, ease, 0s);
+  &:hover{
+    background: lighten(#949494, 10%);
+    text-decoration: none;
+  }
+}
+
+.form-block__wrap_mr10{
+  margin-right: 10%;
+}
+
+.form-block__row{
+  text-align: right;
+  margin-bottom: 17px;
+  &:last-of-type{
+    margin-bottom: 45px;
+  }
+  &:after{
+    @include clear();
+  }
+}
+
+.form-block__text{
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  padding: 8px 10px;
+}
+
+.form-block__text_w95{
+  width: 95%;
+}
+
+.form-block__text_small{
+  width: 50%;
+}
+
+.form-block__link_right{
+  float: right;
+}
+
+.form-block__link-pass{
+  color: #3e66c8;
+  font-size: 14px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.form-block__link-registr{
+  color: #3e66c8;
+  font-size: 14px;
+  margin-right: 10%;
+  margin-left: 2%;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.file-upload{
+  float: right;
+  text-align: left;
+}
+
+.file-upload_w60{
+  width: 60%;
+}
+
+.file-upload_w80{
+  width: 80%;
+}
+
+.file-upload__item{
+  display: inline-block;
+  width: 161px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #949494;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  @include transition(background, 0.3s, ease, 0s);
+  &:hover{
+    background: lighten(#949494, 10%);
+  }
+}
+
+.file-upload__notice{
+  font: italic 13px $basefont;
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+  margin-left: 4px;
+  color: #6e6e6e;
+}
+.file-upload__file-types {
+  font-weight: bold;
+}
+
+
+
+
+

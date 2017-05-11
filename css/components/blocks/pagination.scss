@@ -1,0 +1,56 @@
+.pagination{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  .pagination__list{
+
+    .pagination__item{
+      display: inline-block;
+
+      &:first-child{
+        text-align: left;
+
+        .pagination__link{
+          border: none;
+          display: inline;
+          &:hover{
+            border: none;
+          }
+        }
+      }
+
+      &:last-child{
+        text-align: right;
+
+        .pagination__link{
+          border: none;
+          display: inline;
+          &:hover{
+            border: none;
+          }
+        }
+      }
+
+      .pagination__link{
+        border: 1px solid #3e66c8;
+        box-sizing: border-box;
+        display: block;
+        width: 30px;
+        padding: 4px 8px;
+        @include transition(all, 0.2s, ease, 0s);
+        &_active{
+          border: 1px solid #a0a0a0;
+          color: #a0a0a0;
+        }
+        &:hover{
+          border: 1px solid #a0a0a0;
+          color: #a0a0a0;
+        }
+      }
+
+    }
+
+  }
+
+}

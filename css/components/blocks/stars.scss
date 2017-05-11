@@ -1,0 +1,11 @@
+.stars {
+  display: inline-block;
+  svg {
+    width: 15px;
+    height: 15px;
+    fill: #b8b8b8;
+    &.star_active {
+      fill: #f00;
+    }
+  }
+}

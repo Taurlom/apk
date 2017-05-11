@@ -1,0 +1,21 @@
+.breadcrumbs {
+  margin: 25px auto;
+  font-size: 13px;
+  a {
+    display: inline-block;
+    transition: .3s;
+    color: #2e5bc9;
+    border-bottom: 1px solid #2e5bc9;
+    &:hover {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  li {
+    display: inline-block;
+    &:not(:last-of-type):after {
+      content: "/";
+      display: inline-block;
+      margin: 0 5px 0 10px;
+    }
+  }
+}

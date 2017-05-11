@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+</head>
+
+<body>
+   @@include('../includes/common/browserhappy.html', {})
+   @@include('../includes/blocks/index-header.html', {})
+   @@include('../includes/blocks/search-panel.html', {})
+   @@include('../includes/blocks/breadcrumbs.html', {})
+
+   <main>
+      <div class="container">
+          <section class="content content-form">
+              <h2 class="content-title">Вход в личный кабинет</h2>
+              <form action="#" class="form-block">
+                  <div class="form-block__row">
+                      <span class="form-block__label">E-mail</span>
+                      <div class="form-block__wrap form-block__wrap_mr10">
+                        <input type="email" class="form-block__text">
+                      </div>
+                  </div>
+                  <div class="form-block__row">
+                      <span class="form-block__label">Пароль</span>
+                      <div class="form-block__wrap form-block__wrap_mr10">
+                        <input type="text" class="form-block__text">
+                      </div>
+                  </div>
+                  <div class="form-block__row">
+                      <a href="#" class="form-block__link-pass">Забыли пароль?</a>
+                      <a href="#" class=" form-block__link-registr">Регистрация</a>
+                  </div>
+                  <button type="submit" class="btn-submit">Войти</button>
+              </form>
+          </section>
+      </div>
+   </main>
+
+   @@include('../includes/blocks/footer.html', {})
+
+   @@include('../includes/common/scripts.html', {})
+
+</body>
+</html>
+
