@@ -1,31 +1,3 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
-* What follows is the result of much research on cross-browser styling.
-* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
-* Kroc Camen, and the H5BP dev community and team.
-*/
-
-/* ==========================================================================
-Base styles: opinionated defaults
-========================================================================== */
-
-html {
-  line-height: 1;
-  height: 100%;
-  font-weight: normal;
-}
-
-body {
-  position: relative;
-  height: 100%;
-  background: #fff;
-  font: 16px $basefont;
-  min-width: 1200px;
-}
-
-//stick footer to bottom
-
 
 *, :after, :before {
   box-sizing: border-box
@@ -183,27 +155,6 @@ Helper classes
   clear: both;
 }
 
-.block {
-  display: block !important;
-}
-
-.fl-l {
-  float: left;
-}
-
-.fl-r {
-  float: right;
-}
-
-/*select,
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=number],
-input[type=text] {
-  width: 100%;
-}*/
-
 input::-ms-clear {
   display: none;
 }
@@ -226,64 +177,13 @@ input[type='number'] {
 //
 //-------------------------------------------------------------------------
 
-.d-t {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-.d-tr {
-  display: table-row;
-}
-
-.d-tc {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.va-m {
-  vertical-align: middle;
-}
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-.d-ib {
-  display: inline-block !important;
-}
-
-input, select {
-  outline: 0;
-}
-
-
-.ta-c {
-  text-align: center !important;
-}
-
-.ta-l {
-  text-align: left;
-}
-
-.ta-r {
-  text-align: right;
-}
-
-.td-u {
-  text-decoration: underline;
-}
-
-
-.fl-r {
-  float: right;
-}
-
-.fl-l {
-  float: left;
-}
-
+input, select,
 button {
   outline: 0;
 }
@@ -292,44 +192,4 @@ ul, li {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-
-.nowrap {
-  white-space: nowrap;
-}
-
-p {
-  font-size: 17.33px;
-  color: #272727;
-}
-
-b, strong {
-  font-family: $boldfont;
-}
-
-.font-0 {
-  font-size: 0;
-}
-
-//.mt50 {
-//  margin-top: 50px !important;
-//}
-.mt20 {
-  margin-top: 20px;
-}
-//.mt10 {
-//  margin-top: 10px;
-//}
-//
-//
-.mb10 {
-  margin-bottom: 10px;
-}
-//.mb5 {
-//  margin-bottom: 5px;
-//}
-
-.w300 {
-  width: 300px;
 }

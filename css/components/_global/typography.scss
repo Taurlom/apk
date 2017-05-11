@@ -1,26 +1,12 @@
-h2 {
-  font-size: 33.33px;
+h1 {
+  margin: 0;
+  color: #fff;
   font-weight: normal;
-  margin: 20px 0 0;
 }
 
-
-.big-text {
-  font-size: 27px;
-  margin: 20px 0;
-}
-
-.arial {
-  font-family: Arial, sans-serif;
-}
-
-.content-title{
-  font: 40px $lightfont;
-  color: #12275a;
-  &_no-margin {
-    margin: 0;
-  }
-  &_first {
-    margin-top: 0;
+.h1 {
+  font-size: 60px;
+  &_index {
+    margin: 60px 0 0 60px;
   }
 }
