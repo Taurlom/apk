@@ -420,74 +420,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
-
-The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-/*
-The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
-  It should be used with a "retina group" variable.
-
-The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
-
-$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
-
-.icon-home {
-  @include retina-sprite($icon-home-group);
-}
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-/*
-The `retina-sprites` mixin generates a CSS rule and media query for retina groups
-  This yields the same output as CSS retina template but can be overridden in SCSS
-
-@include retina-sprites($retina-groups);
-*/
 *, :after, :before {
   box-sizing: border-box; }
 
@@ -656,14 +588,16 @@ body {
   height: 100%;
   background: url("/img/bg_main.jpg") center no-repeat;
   background-size: cover;
-  font-size: 16px;
   min-width: 1200px; }
 
 main {
   border-top: 1px solid transparent;
   position: relative;
   min-height: 100%;
-  min-width: 1000px; }
+  min-width: 1200px; }
+
+body {
+  font: 16px Verdana, Arial, Helvetica, sans-serif; }
 
 h1 {
   margin: 0;
@@ -673,7 +607,7 @@ h1 {
 .h1 {
   font-size: 60px; }
   .h1_index {
-    margin: 60px 0 0 60px; }
+    margin: 30px 0 0 50px; }
 
 /**
  * bxSlider v4.2.5
@@ -4144,12 +4078,131 @@ img.mfp-img {
     opacity: 0;
     transform: scale(1.5); } }
 
+.logo-box {
+  position: relative;
+  height: 180px; }
+
+.logo {
+  width: 200px;
+  height: 116px;
+  background: url("/img/logo.png") center no-repeat;
+  background-size: cover;
+  margin: 32px 0 0 25px; }
+
+.start-link {
+  position: absolute;
+  transition: .3s;
+  top: 20px;
+  right: 20px;
+  width: 90px;
+  height: 90px;
+  border: 4px solid #e7e7e7;
+  border-radius: 50%; }
+  .start-link:hover {
+    border: 4px solid #fff; }
+    .start-link:hover:after {
+      transform: translate(-50%, -50%) scale(1.2, 1.2); }
+  .start-link:after {
+    content: '';
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(/img/sprite.png);
+    background-position: -35px 0px;
+    width: 21px;
+    height: 20px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .start-link:after {
+        background-image: url(/img/sprite2x.png);
+        background-size: 56px 37px; } }
+
 .timeline {
   width: 100%;
-  height: 125px;
+  height: 180px;
   background: rgba(0, 0, 0, 0.15);
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 60px; }
+  .timeline__box {
+    height: 180px;
+    margin-left: 20px;
+    position: relative; }
+  .timeline__d-list {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 0;
+    color: #fff; }
+    .timeline__d-list-item {
+      position: relative;
+      display: inline-block;
+      vertical-align: baseline;
+      padding: 0 10px;
+      z-index: 2; }
+      .timeline__d-list-item:nth-child(1) {
+        font-size: 14px;
+        padding-left: 0; }
+      .timeline__d-list-item:nth-child(2) {
+        font-size: 16px; }
+      .timeline__d-list-item:nth-child(3) {
+        font-size: 18px; }
+      .timeline__d-list-item:nth-child(4) {
+        font-size: 20px; }
+      .timeline__d-list-item:nth-child(5) {
+        font-size: 22px; }
+      .timeline__d-list-item:nth-child(6) {
+        font-size: 24px; }
+      .timeline__d-list-item:nth-child(7) {
+        font-size: 28px; }
+      .timeline__d-list-item:nth-child(8) {
+        font-size: 30px; }
+      .timeline__d-list-item:nth-child(9) {
+        font-size: 32px; }
+      .timeline__d-list-item:nth-child(10) {
+        font-size: 34px; }
+    .timeline__d-list-line {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 60px;
+      width: 100%;
+      height: 4px;
+      background: #5dbafa;
+      border: 1px solid #4f7fa6;
+      z-index: 1; }
+      .timeline__d-list-line-mark {
+        position: absolute;
+        top: -50px;
+        left: 6px;
+        background-image: url(/img/sprite.png);
+        background-position: 0px 0px;
+        width: 25px;
+        height: 37px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .timeline__d-list-line-mark {
+            background-image: url(/img/sprite2x.png);
+            background-size: 56px 37px; } }
+        .timeline__d-list-line-mark:after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 11px;
+          width: 11px;
+          left: 7px;
+          bottom: -20px;
+          background: #fff;
+          border-radius: 50%; }
+  .timeline__menu-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 180px;
+    z-index: 2; }
+    .timeline__menu-box_index {
+      min-width: 360px;
+      background: #c7c7c7 url("/img/bg_menu-index.png") repeat-y;
+      background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */

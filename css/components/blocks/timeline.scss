@@ -1,8 +1,98 @@
 .timeline {
   width: 100%;
-  height: 125px;
+  height: $timeline-height;
   background: rgba(0, 0, 0, .15);
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 60px;
+  &__box {
+    height: $timeline-height;
+    margin-left: 20px;
+    position: relative;
+  }
+  &__d-list {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 0;
+    color: #fff;
+    &-item {
+      position: relative;
+      display: inline-block;
+      vertical-align: baseline;
+      padding: 0 10px;
+      z-index: 2;
+      &:nth-child(1) {
+        font-size: 14px;
+        padding-left: 0;
+      }
+      &:nth-child(2) {
+        font-size: 16px;
+      }
+      &:nth-child(3) {
+        font-size: 18px;
+      }
+      &:nth-child(4) {
+        font-size: 20px;
+      }
+      &:nth-child(5) {
+        font-size: 22px;
+      }
+      &:nth-child(6) {
+        font-size: 24px;
+      }
+      &:nth-child(7) {
+        font-size: 28px;
+      }
+      &:nth-child(8) {
+        font-size: 30px;
+      }
+      &:nth-child(9) {
+        font-size: 32px;
+      }
+      &:nth-child(10) {
+        font-size: 34px;
+      }
+    }
+    &-line {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 60px;
+      width: 100%;
+      height: 4px;
+      background: $c-sky;
+      border: 1px solid #4f7fa6;
+      z-index: 1;
+      &-mark {
+        position: absolute;
+        top: -50px;
+        left: 6px;
+        @include retina-sprite($timeline-mark-group);
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 11px;
+          width: 11px;
+          left: 7px;
+          bottom: -20px;
+          background: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  &__menu-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $timeline-height;
+    z-index: 2;
+    &_index {
+      min-width: 360px;
+      background: #c7c7c7 url("/img/bg_menu-index.png") repeat-y;
+      background-size: 100%;
+    }
+  }
 }
