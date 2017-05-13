@@ -1,4 +1,4 @@
-require('../../vendor/modernizr-custom.js');
+// require('../../vendor/modernizr-custom.js');
 require('../../vendor/owl.carousel.js');
 
 $("._owl").owlCarousel({
