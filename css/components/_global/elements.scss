@@ -1,0 +1,16 @@
+.body {
+  background: url("/img/bg_main.jpg") center no-repeat;
+  background-size: cover;
+  &_dark {
+    background-image: url("/img/bg_dark.jpg");
+  }
+}
+
+.main {
+  transition: 1s;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  &_masked {
+    background: rgba(0, 0, 0, .6);
+  }
+}
