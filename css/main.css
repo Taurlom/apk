@@ -427,11 +427,40 @@ textarea {
     background-image: url("/img/bg_dark.jpg"); }
 
 .main {
+  position: relative;
   transition: 1s;
   background: transparent;
   overflow: hidden; }
   .main_masked {
     background: rgba(0, 0, 0, 0.6); }
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .7s;
+  height: calc(100% - 240px); }
+  .content_hidden {
+    opacity: 0; }
+  .content__section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    opacity: 0;
+    z-index: 1; }
+    .content__section_foto {
+      background: #2c8d29; }
+    .content__section_nums {
+      background: #8d5577; }
+    .content__section_facts {
+      background: #378b8d; }
+    .content__section._tab-body_active {
+      opacity: 1;
+      z-index: 2; }
 
 *, :after, :before {
   box-sizing: border-box; }
@@ -4283,6 +4312,8 @@ img.mfp-img {
       .timeline__menu-item:hover {
         color: #5dbafa;
         cursor: pointer; }
+      .timeline__menu-item._tab-active {
+        color: #5dbafa; }
     .timeline__menu-pic {
       display: block;
       position: absolute;

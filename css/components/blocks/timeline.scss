@@ -172,6 +172,9 @@
         color: $c-sky;
         cursor: pointer;
       }
+      &._tab-active {
+        color: $c-sky;
+      }
     }
     &-pic {
       display: block;
